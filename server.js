@@ -9,7 +9,7 @@ app.use(express.static('./'));
 app.use(express.static('./build'));
 
 if(process.env.NODE_ENV !== 'production'){
-    console.log("dev")
+
     var webpack = require('webpack');
     var webpackConfig = require('./webpack.config.js');
     var webpackComplied = webpack(webpackConfig);
