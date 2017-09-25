@@ -1,0 +1,22 @@
+{
+  "presets": ["react","es2015","stage-0"],
+  "plugins": ["transform-decorators-legacy",
+    ["import",{"libraryName":"antd", "style":"css"}],
+    ["transform-runtime", {
+      "helpers": false,
+      "polyfill": false,
+      "regenerator": true,
+      "moduleName": "babel-runtime"
+  }]],
+  "env":{
+    "decelopment":{
+      "plugins":[["react-transform",{
+        "transforms":[{
+          "transform":"reat-reansform-hmr",
+          "import":["react"],
+          "locals":["module"]
+        }]
+      }]]
+    }
+  }
+}
