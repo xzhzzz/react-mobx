@@ -40,9 +40,7 @@ module.exports = {
     },
     plugins:[
         new HtmlWebpackPlugin({
-            template:__dirname + "/index.tmpl.html",
-            favicon:__dirname + "/favicon.ico",
-            title:'react'
+            template:__dirname + "/index.tmpl.html"
         }),
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.optimize.UglifyJsPlugin(),
