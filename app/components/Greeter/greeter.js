@@ -16,7 +16,7 @@ class Greeter extends Component{
             <div className="greet">
                 <h1>{this.props.greeterStore.greeter.one}</h1>
                 <Button type="primary" onClick={this.props.greeterStore.handleClick}>++</Button>
-                <div className="one">123</div>
+                <div className="one">1234567</div>
                 <div className="imgs"></div>
                 <Button onClick={this.props.greeterStore.handleTest}>axios</Button>
                 <Link to="/">back</Link>

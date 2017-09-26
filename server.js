@@ -30,7 +30,7 @@ if(process.env.NODE_ENV !== 'production'){
     app.use(webpackHotMiddleware(webpackComplied));
 }
 
-app.use('/api/v1',proxy({target:'http://www.baidu.com',changeOrigin:true}))
+app.use('/api/v1',proxy({target:'https://www.baidu.com',changeOrigin:true}))
 
 var server = app.listen(port,function(){
     console.log('Listening at http://localhost:%s',port);
